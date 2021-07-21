@@ -1,6 +1,6 @@
 import React from 'react';
-import { ReactComponent as LogoIcon } from '../icons/logo-svg.svg';
-import { ReactComponent as LogInIcon } from '../icons/login-svg.svg';
+import { ReactComponent as LogoIcon } from '../../icons/logo-svg.svg';
+import { ReactComponent as LogInIcon } from '../../icons/login-svg.svg';
 
 export const Header = ({onClickHandler}) => {
   return (

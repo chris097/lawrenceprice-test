@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { SnackbarProvider } from 'notistack';
+import Loading from './components/loading/Loading';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+const App = lazy(() => import('./App'));
+
+const queryClient = new QueryClient();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Suspense fallback={
+    <div className="flex justify-center my-52">
+      <Loading size={70} />
+    </div>
+  }>
+    <SnackbarProvider
+      maxSnack={3}
+      anchorOrigin={{ vertical: 'top', horizontal: 'right',}}
+      preventDuplicate={true}
+    >
+    <QueryClientProvider client={queryClient}>
+      <App />
+    </QueryClientProvider>
+  </SnackbarProvider>
+  </Suspense>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
