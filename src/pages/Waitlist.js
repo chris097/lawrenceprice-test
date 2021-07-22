@@ -55,7 +55,7 @@ export const Waitlist = () => {
               <img src={image4} className=" bg-center bg-cover bg-no-repeat object-cover -ml-8 w-91 h-91" alt="" />
               <img src={image5} className=" bg-center bg-cover bg-no-repeat object-cover -ml-8 w-91 h-91" alt="" />
             </div>
-            <div className="flex justify-center text-36 font-400 lg:w-525 w-full text-center mx-auto">Be amongst the First to Get the News When we Launch! <span className="-ml-20 mt-16"><CreamIcon /></span></div>
+            <div className="lg:flex justify-center text-36 font-400 lg:w-525 w-full text-center mx-auto">Be amongst the First to Get the News When we Launch! <span className="lg:-ml-20 lg:mt-16 flex justify-center"><CreamIcon /></span></div>
           </div>
         </div>
         <WaitList />
