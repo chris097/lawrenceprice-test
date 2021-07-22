@@ -4,7 +4,7 @@ import { ReactComponent as LogoIcon } from '../../icons/logo-svg.svg';
 
 const Header = () => {
   return (
-    <div className="bg-white w-full h-114 shadow-primaryShadow flex justify-between px-10 items-center cursor-pointer fixed z-40">
+    <div className="bg-white w-full h-114 shadow-primaryShadow flex justify-between lg:px-10 px-4 items-center cursor-pointer fixed z-40">
       <div><LogoIcon /></div>
       <div className="text-14 font-RatDisplay font-500">
         <span className="text-secondaryColor mr-10">BBeShop</span>

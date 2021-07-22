@@ -37,11 +37,11 @@ export const Shop = () => {
         />
       </div>
       <div className="mt-20">
-      <div className="w-full px-10 ">
-      <img src={shopBanner} alt="" />
+      <div className="w-full lg:px-10 px-4 ">
+      <img src={shopBanner} className="lg:h-auto h-192" alt="" />
       </div>
       <Cards onClickHandler={toggleCard} />
-      <div className="flex justify-center mt-20 text-center px-10 ">
+      <div className="flex justify-center mt-20 text-center lg:px-10 px-4 ">
           <div className="font-RatDisplay">
             <div className="text-18 font-700 text-primaryBlack">SHOPPING MADE SUPER EASY</div>
             <div className="text-64 text-primaryBlack font-700">Shop with freedom</div>
@@ -52,15 +52,15 @@ export const Shop = () => {
               <img src={image4} className=" bg-center bg-cover bg-no-repeat object-cover -ml-8 w-91 h-91" alt="" />
               <img src={image5} className=" bg-center bg-cover bg-no-repeat object-cover -ml-8 w-91 h-91" alt="" />
             </div>
-            <div className="flex justify-center text-36 font-400 text-center w-519 mx-auto">Our App Is Is Beta And Coming Soon <span className="absolute ml-36 mt-16"><CreamIcon /></span></div>
+            <div className="lg:flex justify-center text-36 font-400 text-center lg:w-519 mx-auto">Our App Is Is Beta And Coming Soon <span className="lg:absolute lg:ml-36 lg:mt-16 lg:flex-none flex justify-center"><CreamIcon /></span></div>
           </div>
         </div>
-        <div className="flex justify-center mt-24 px-10 ">
+        <div className="flex justify-center mt-24 lg:px-10 px-4 ">
         <div className="text-center">
           <div className="text-18 font-RatText font-500">Coming Soon On:</div>
-            <div className="flex align-middle items-center mt-2">
+            <div className="md:flex flex-wrap align-middle items-center mt-2">
               <GoogleIcon className="mt-3"  />
-              <img src={apple} className="mx-3 mt-6"  alt="" />
+              <img src={apple} className="lg:mx-3 mt-6"  alt="" />
               <WebIcon className="mt-5" />
             </div>
           </div>
