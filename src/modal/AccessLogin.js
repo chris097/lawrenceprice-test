@@ -32,7 +32,7 @@ export const AccessLogin = ({onClickHandler}) => {
     <>
       <div className="bg-gray-700 opacity-30 fixed top-0 left-0 z-50 w-full h-full"></div>
       <div className="">
-        <div className="fixed top-10 lg:right-7 lg:w-595 w-full lg:h-500 h-auto rounded-20 z-50 shadow-secondaryShadow bg-white px-4 pt-5">
+        <div className="fixed top-10 lg:right-7 right-3.5 lg:w-595 w-9 lg:h-500 h-auto rounded-20 z-50 shadow-secondaryShadow bg-white px-4 pt-5 pb-4">
           <button onClick={onClickHandler}  className="float-right" type="button"><Cancel /></button>
           <div className="flex justify-between px-5 mt-7 items-center">
             <div className="text-36 font-RatDisplay font-500">Private Access</div>
