@@ -39,9 +39,9 @@ export const Header = ({onClickHandler}) => {
        { menuClose === 'close' && <button onClick={toggleClose} className="text-24 text-primaryGray lg:hidden inline-block absolute right-6"><GrClose /></button>}
       </div>
       { drop === 'drop' && <div className="fixed right-0 top-32 -mt-4 shadow-sm inline-block lg:hidden bg-white w-48 h-14">
-      <div className="flex justify-center items-center">
+      <div onClick={onClickHandler} className="flex justify-center items-center">
       <span className="text-primaryColor text-13 font-SourceCode">Verified Access</span>
-      <button onClick={onClickHandler} type="button"><LogInIcon /></button>
+      <button type="button"><LogInIcon /></button>
     </div>
       </div>}
     </div>

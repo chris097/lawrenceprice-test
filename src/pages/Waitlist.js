@@ -37,11 +37,11 @@ export const Waitlist = () => {
       <div className="lg:px-10 px-4 mt-20">
         <div className="flex justify-center">
           <div className="lg:w-617 w-full h-616">
-            <img src={banner} alt="young_lady" className="w-full h-full" />
+            <img src={banner} alt="young_lady" className="w-full h-full object-cover" />
           </div>
           <div className="lg:w-595 w-full">
-            <div className="h-308"><img className="w-ful h-full" src={banner2} alt="young_lady" /></div>
-            <div className="h-349" style={{ marginTop: '-41px'}}><img className="w-full h-full" src={banner1} alt="young_man" /></div>
+            <div className="h-308"><img className="w-ful h-full object-cover" src={banner2} alt="young_lady" /></div>
+            <div className="h-349" style={{ marginTop: '-41px'}}><img className="w-full h-full object-cover" src={banner1} alt="young_man" /></div>
           </div>
         </div>
         <div className="flex justify-center mt-20 text-center">
