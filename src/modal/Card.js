@@ -12,7 +12,7 @@ const Card = ({onClickHandler, id }) => {
     <>
       <div className="bg-gray-700 opacity-30 fixed top-0 left-0 z-50 w-full h-full"></div>
       <div className="mx-auto flex justify-center">
-        <div className="bg-white fixed rounded-20 shadow-primaryShadow lg:w-525 lg:h-757 w-full h-auto top-2 mx-auto z-50 pb-4">
+        <div className="bg-white fixed rounded-20 shadow-primaryShadow lg:w-525 lg:h-757 w-9 h-auto top-2 mx-auto z-50 pb-4">
           { isLoading ? <div className="flex justify-center mx-auto mt-52"><Loading />Uploading image...</div> : 
           <>
           <button onClick={onClickHandler}  className="flex justify-end absolute right-4 top-3" type="button"><Cancel className="flex justify-end items-end" /></button>
