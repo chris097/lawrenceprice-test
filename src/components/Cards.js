@@ -10,6 +10,7 @@ const Cards = ({onClickHandler}) => {
 
   return(
     <div className="bg-secondaryBlue w-full h-auto pt-10 pb-16 lg:px-10 px-4 my-10 mx-auto">
+      <div className="w-6/6 mx-auto">
       <div className="flex lg:ml-6 flex-wrap justify-center">
         {isLoading ? <div className="flex justify-center mx-auto"><Loading /> Loading...</div>
         :
@@ -26,6 +27,7 @@ const Cards = ({onClickHandler}) => {
         </div>
           ))
         }
+      </div>
       </div>
     </div>
   )
