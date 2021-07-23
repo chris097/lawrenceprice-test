@@ -6,6 +6,7 @@ import Loading from '../components/loading/Loading';
 const Cards = ({onClickHandler}) => {
 
   const {data, isLoading} = useData('photos');
+  console.log(data)
 
   return(
     <div className="bg-secondaryBlue w-full h-auto pt-10 pb-16 lg:px-10 px-4 my-10">
