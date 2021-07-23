@@ -6,11 +6,10 @@ import Loading from '../components/loading/Loading';
 const Cards = ({onClickHandler}) => {
 
   const {data, isLoading} = useData('photos');
-  console.log(data)
 
   return(
-    <div className="bg-secondaryBlue w-full h-auto pt-10 pb-16 lg:px-10 px-4 my-10">
-      <div className="flex lg:ml-6 flex-wrap">
+    <div className="bg-secondaryBlue w-full h-auto pt-10 pb-16 lg:px-10 px-4 my-10 mx-auto">
+      <div className="flex lg:ml-6 flex-wrap justify-center">
         {isLoading ? <div className="flex justify-center mx-auto"><Loading /> Loading...</div>
         :
           data?.map((card, index) => (
