@@ -37,7 +37,7 @@ export const Waitlist = () => {
       <div className="lg:px-10 px-4 mt-20">
         <div className="flex justify-center">
           <div className="lg:w-617 w-full h-616">
-            <img src={banner} alt="young_lady" className="w-full h-full object-cover" />
+            <img src={banner} alt="young_lady" className="w-full h-full lg:w-617 w-full h-616 object-cover" />
           </div>
           <div className="lg:w-595 w-full">
             <div className="h-308"><img className="w-ful h-full object-cover" src={banner2} alt="young_lady" /></div>
