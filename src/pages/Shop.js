@@ -38,7 +38,7 @@ export const Shop = () => {
       </div>
       <div className="mt-20">
       <div className="w-full lg:px-10 px-4 ">
-      <img src={shopBanner} className="lg:h-auto h-192" alt="" />
+      <img src={shopBanner} className="lg:h-auto h-192 w-full" alt="" />
       </div>
       <Cards onClickHandler={toggleCard} />
       <div className="flex justify-center mt-20 text-center lg:px-10 px-4 ">
